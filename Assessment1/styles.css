@@ -1,44 +1,74 @@
 body {
   margin: 0px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: white;
+  
   padding: 0px;
+}
+button {
+  border: none;
 }
 
 .hero-bg {
   background-position: center;
   background-size: cover;
   background: linear-gradient(39.97deg, #EF2779 0.79%, #7834BE 79.29%);
-  height: 750px;
+  height: 700px;
   width:100%;
   left: 0px;
   padding: 0;
-  
+  color: white;
 }
 
 
-
+.hero-bg .logo {
+  margin: 10px 0px 0px 30px;
+}
 .hero-bg .logo img {
   width: 200px;
   height: 70px;
   margin-right: 400px;
+  
+  
 }
 
 nav {
   display: flex;
   align-items: stretch;
+  
 }
 
+ul :nth-child(6) button {
+  width: 200px;
+  border-radius: 25px;
+  margin-right: 20px;
+  text-align: left;
+  padding: 10px 0 10px 10px;
+
+  
+
+}
+ ul :nth-child(7) button {
+  padding: 10px 0 10px 10px;
+  border-radius: 25px;
+  width: 100px;
+  text-align: left;
+  font-weight: 700px;
+  color: #EF2779;
+ }
+
+ul a {
+  text-decoration:none;
+  color: white;
+  margin-right: 50px;
+}
 
 nav ul {
   display: flex;
   list-style: none;
-  flex-grow: 1;
+  margin-top: 40px;
   
-  justify-content: space-around;
-  align-content: center;
-  margin-top: 30px;
 }
+
 
 .bg-wrapper {
   display: flex;
@@ -47,14 +77,22 @@ nav ul {
   align-content: center;
   position: absolute;
   z-index: 1;
-  
 }
+
 
 .bg-wrapper .screen-shot {
 flex: 50%;
 box-sizing: border-box;
 z-index: 1;
-
+}
+.bg-wrapper button {
+  border-radius: 25px;
+  width: 150px;
+  height: 50px;
+  font-size: 16px;
+  color:#38A3F1;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
 .bg-wrapper .screen-shot img {
@@ -62,7 +100,7 @@ z-index: 1;
   height: 100vh;
   z-index: 1;
   margin-left: -35px;
-  margin-right: -3px;
+  margin-right: -5px;
  }
 
 .bg-wrapper .heading {
@@ -79,6 +117,10 @@ z-index: 1;
 
 .bg-wrapper p {
   font-size: 16px;
+  margin: 0px;
+  line-height: 1.3;
+  font-weight: 600;
+  
 }
 
 .hero-bg .overlay-wave {
@@ -90,27 +132,99 @@ z-index: 1;
 .features-wrapper {
   color: black;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 100px;
 }
 .features-flex {
   display: flex;
   flex: 3;
 }
 
+.features-wrapper-title p {
+  font-size: 30px;
+  font-weight: 700px;
+  margin: 0px;
+}
+.features-wrapper h2 {
+  font-size: 60px;
+  margin: 0px;
+}
+
+.features-wrapper .features-discripition  {
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+}
 .flex-item {
-  padding:150px;
+  padding:120px;
   text-align: left;
 
+}
+.item-title {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  margin: 0px;
+}
+.item-title h2 {
+  order: 2;
+  margin: 10px 0 0 0;
+  font-size: 26px;
 }
 .prototype {
   font-size: 30px;
   text-align: center;
 }
 .prototype img{
-  width: 800px;
-  height: 500px;
+  width: 600px;
+  height: 300px;
 }
+.prototype button {
+  background-color: #38A3F1;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 25px;
+  border: none;
+}
+
+.partners {
+  text-align: center;
+}
+.partners .partner-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 100px;
+  order: 3;
+
+}
+.client {
+  width: 25%;
+  align-content: center;
+  order: 3;
+  padding: 0 40px;
+}
+
+.client p{
+  padding: 0 90px;
+  order: 3  ;
+  
+}
+.partner-flex img {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+
 .fast-prototype {
   background: linear-gradient(39.97deg, #EF2779 0.79%, #7834BE 79.29%);
   height: 80vh;
+  text-align: center;
+}
+.fast-prototype :first-child p {
+   font-size: 40px;
+}
+.Testimonals {
+  color:black;
+  text-align: center;
+  align-content: centerx;
 }
