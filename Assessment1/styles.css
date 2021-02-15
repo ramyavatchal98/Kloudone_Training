@@ -317,12 +317,12 @@ width: 50%;
 .Testimonals .ui-organizer p {
   position: relative;
   left: 30;
-  bottom: 20;
+  bottom: 30;
 }
 .Testimonals .ui-designer p {
   position: relative;
   left: 15;
-  bottom: 35;
+  bottom: 45;
 }
 .Testimonals .user-img img {
   border-radius: 50%;
