@@ -314,15 +314,25 @@ width: 50%;
   width: 50%;
   margin-left: 400px;
 }
-.Testimonals .ui-organizer {
+.Testimonals .ui-organizer p {
   position: relative;
   top:20px;
   left:50px;
 }
-.Testimonals .ui-designer {
+.Testimonals .ui-designer p {
   position: relative;
-  left:30px;
+  left: 30;
 }
+.Testimonals .user-img img {
+  border-radius: 50%;
+  width:60px;
+  height: 60px;
+  position:relative;
+  top:100px;
+  right:60px;
+}
+
+
 .Testimonals .try-free-button {
   margin: 80px 0px 0px 0px;
   width: var(--long-button,300px);
@@ -573,12 +583,32 @@ footer .social-media-flex {
     margin-left: 0px;
     width: 100%;
   }
+
+  .Testimonals .ui-organizer p {
+    display: block;
+    position: relative;
+    left: 45;
+    bottom: 30;
+  }
+ .Testimonals .ui-designer p {
+   display: relative;
+   left: 30;
+ }
+  .Testimonals img {
+    position: relative;
+    top: 50;
+    right: 60px;
+  }
+
   .contact-flex {
     margin: 30px auto;
     display: flex;
     flex-direction: column-reverse;
   }
-  .partner-flex :nth-child(4), :nth-child(5) {
+  .partner-flex :nth-child(4) {
+    display: none;
+  }
+  .partner-flex :nth-child(5) {
     display: none;
   }
   .partner-flex :nth-child(6) {
