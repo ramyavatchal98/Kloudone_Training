@@ -524,6 +524,10 @@ footer .social-media-flex {
     position: relative;
     height: auto;
   }
+  .laptop-img img {
+    width: 400px;
+    margin: 0px auto;
+  }
 
    
  .hero-bg .wave-wrapper svg {
@@ -573,7 +577,12 @@ footer .social-media-flex {
     margin: 30px auto;
     display: flex;
     flex-direction: column-reverse;
-
+  }
+  .partner-flex :nth-child(4), :nth-child(5) {
+    display: none;
+  }
+  .partner-flex :nth-child(6) {
+    display: none;
   }
   .newsletter .email-input,.white-bg-button {
     opacity: 1;
