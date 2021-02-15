@@ -1,0 +1,124 @@
+body {
+  width:100%;
+}
+.hero-bg {
+  height: 1000px;
+}
+.hero-bg .heading {
+  text-align: center;
+ width: 100%;
+ padding: 0px
+}
+nav {
+  display:inline-flex;
+  
+}
+.hero-bg nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  float: right;
+}
+ul li {
+  float: right;
+}
+ul li i {
+  opacity: 1;
+}
+nav  ul li a,.email-input {
+  opacity: 0;
+}
+ul li .white-bg-button {
+  opacity: 0;
+}
+.item-title {
+  font-size: 16px;
+}
+
+.bg-wrapper {
+  flex-direction: column-reverse;
+}
+.hero-bg .screen-shot {
+  width: 100%;
+}
+.screen-shot .img{
+  width:100%;
+  height: 200px;
+  position: absolute;
+}
+.wave-wrapper .svg-wave1,svg {
+  position:absolute;
+  top: 600px;
+  width: 100%;
+  height: 100%;
+  top: 600;
+}
+
+ 
+.bg-wave .wave-wrapper div {
+  flex-shrink: 1;
+  order: 2;
+  width: 100%;
+  height: 100%;
+}
+.features-flex,.flex-item {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  text-align: center;
+  margin: 30px auto;
+}
+.flex-item p {
+  padding: 0px;
+  margin: 10px auto;
+  text-align: justify;
+}  
+.client {
+  width: 75%;
+}
+.prototype .pricing-title {
+  width: 400px;
+}
+.pricing-flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin:0px auto;
+}
+.pricing-flex .pricing-item {
+  width: 50%;
+  margin: 30px auto;
+}
+.Testimonals p {
+  text-align: center;
+  margin-left: 0px;
+  width: 100%;
+}
+.contact-flex {
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column-reverse;
+
+}
+.newsletter .email-input,.white-bg-button {
+  opacity: 1;
+}
+ .contact-bg .contact-flex .contact-form {
+ margin:50px auto;
+}
+.contact-flex .social-media {
+  display: flex;
+  margin-left: 120;
+  margin-bottom: 30px;
+}
+.social-media-flex {
+  margin-top: 40px;
+  flex-direction: column-reverse;
+}
+.social-media-flex .social-media {
+  margin: 50px 0px auto 100px;
+}
+.social-media-flex .social-media-icons {
+  margin: 10px auto;
+}
+
+
