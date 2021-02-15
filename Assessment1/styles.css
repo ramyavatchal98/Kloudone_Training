@@ -58,7 +58,7 @@ body {
   width: 200px;
   height: 70px;
   float:left;
-  margin: 30px 300px 0px 50px;
+  margin: 30px 100px 0px 50px;
 }
 nav {
   display: flex;
@@ -379,7 +379,7 @@ width: 50%;
   background: #252B42;
   color: white;
   margin-top: 100px;
-  height: 90vh;
+  height: 120vh;
 }
 .contact-flex{
   flex: none;
@@ -548,6 +548,12 @@ footer .social-media-flex {
   }
   .prototype .pricing-title {
     width: 400px;
+  }
+  .prototype .prototype-title p {
+    text-align: center;
+    width: 100%;
+    font-size: 50;
+}
   }
   .pricing-flex {
     display: flex;
