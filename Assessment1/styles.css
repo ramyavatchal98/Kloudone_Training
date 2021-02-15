@@ -594,9 +594,8 @@ footer .social-media-flex {
    display: relative;
    left: 30;
  }
-  .Testimonals img {
+  .Testimonals .user-img img {
     position: relative;
-    top: 50;
     right: 60px;
   }
 
@@ -613,6 +612,9 @@ footer .social-media-flex {
   }
   .partner-flex :nth-child(6) {
     display: none;
+  }
+  .dropbox img {
+    m
   }
   .newsletter .email-input,.white-bg-button {
     opacity: 1;
