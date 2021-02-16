@@ -488,7 +488,7 @@ footer .social-media-flex {
     width:100%;
   }
   .hero-bg {
-    height: 1000px;
+    height: 1150px;
   }
   .contact-bg {
     height: auto;
@@ -539,6 +539,17 @@ footer .social-media-flex {
   .laptop-img img {
     width: 400px;
     margin: 0px auto;
+  }
+  .gray-wave {
+    position: relative;
+    bottom: 180;
+    display: block;
+  }
+  .white-wave {
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+    bottom: 250;
   }
 
    
