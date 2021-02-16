@@ -127,7 +127,10 @@ width: 50%;
   position: relative;
     bottom: 320;
     display: block;
+    position: relative;
+    bottom: 460;
 }
+
 
 .features-wrapper h2 {
   font-size:var(--large-font);
