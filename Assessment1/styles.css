@@ -123,11 +123,11 @@ width: 50%;
   overflow:hidden;
   display: block;
     position: relative;
-    bottom: 500;
+    bottom: 460;
 }
 .gray-wave {
   position: relative;
-    bottom: 350;
+    bottom: 320;
 }
 
 
@@ -556,7 +556,7 @@ footer .social-media-flex {
     height: 80px;
     overflow: hidden;
     position: relative;
-    bottom: 245;
+    bottom: 2;
   }
 
    
