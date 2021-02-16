@@ -305,7 +305,8 @@ width: 50%;
   font-size: var(--large-font);
   text-align: center;
   width: 100%;
-  margin: 0px;
+  margin: 70px 0px 0px 0px;
+
  
 }
 .Testimonals p {
@@ -335,7 +336,7 @@ width: 50%;
 
 
 .Testimonals .try-free-button {
-  margin: 80px 0px 0px 0px;
+  margin: 50px 0px 0px 0px;
   width: var(--long-button,300px);
   padding: 8px 0px;
   font-size:18px;
