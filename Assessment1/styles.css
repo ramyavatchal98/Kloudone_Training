@@ -118,11 +118,16 @@ width: 50%;
   background-color: var(--white);
   padding:10px;
 }
-.svg-wave1 {
-  width: 100%;
+.white-wave {
+  height:150px;
+  overflow:hidden;
+  display: block;
 }
-.svg-wave2 {
-  width: 100%;
+.gray-wave {
+  position: relative;
+    bottom: 320;
+    display: block;
+}
 }
 .features-wrapper h2 {
   font-size:var(--large-font);
@@ -549,7 +554,7 @@ footer .social-media-flex {
     height: 80px;
     overflow: hidden;
     position: relative;
-    bottom: 250;
+    bottom: 232;
   }
 
    
