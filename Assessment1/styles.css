@@ -549,7 +549,7 @@ footer .social-media-flex {
     bottom: 180;
     display: block;
   }
-  .white-wave {
+  .white-wave svg {
     height: 80px;
     overflow: hidden;
     position: relative;

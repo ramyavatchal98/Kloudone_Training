@@ -1,0 +1,100 @@
+:root {
+  --title-bg:rgb(231, 227, 232,0.5);
+  --border-colr:rgb(185, 181, 186);
+  font-family: -apple-system, Bli, 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+  margin:0px;
+  padding:0px;
+}
+header {
+  background-color: var(--title-bg);
+  height: 60px;
+  padding:20px;
+}
+header h2 {
+  margin-left: 300px;
+}
+
+nav {
+  background-color: #2d2e33;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  float: left;
+}
+ nav button {
+  font-size: 30px;
+    border: none;
+    margin: 40px auto;
+    color: white;
+    display: flex;
+    background-color: #2d2e33;
+
+}
+ button i {
+  background-blend-mode: overlay;;
+  color:white;
+  font-size: 50px;
+  margin:10px 20px 20px 10px;
+ }
+  button p {
+         position: relative;
+         bottom:10px;
+         margin-bottom: 0px;
+         
+  }
+  
+
+
+  .graph-container {
+    display: flex;
+    flex-direction:row ;
+  }
+  .email-stats-div {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid var(--border-colr);
+    border-radius: 25px;
+    float: left;
+    width: 600px;
+    box-sizing: border-box;
+    margin:50px 30px 0px 30px;
+    position: relative;
+  }
+  .email-stats-div .title {
+    border-bottom: 5px solid var(--border-colr);
+    background-color:var(--title-bg) ;
+    font-family: inherit;
+    
+  }
+  .email-stats-div #piechart {
+    flex: 4;
+  }
+  .linechart-div {
+    border: 5px solid var(--border-colr);
+    border-radius: 25px;
+    margin:50px 30px 0px 30px;
+    background-color: var(--title-bg);
+  }
+  .linechart-div .title {
+    border-bottom: 5px solid var(--border-colr);
+  }
+
+
+
+  .map-container {
+    background-image:url("assets/googl_ED.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .user-flex {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
