@@ -109,7 +109,7 @@ nav button:hover {
     flex-direction: column;
     border:1px solid var(--border-colr);
     width:400px ;
-    height: 90vh;
+    height: 100vh;
     margin: 0px auto;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     
