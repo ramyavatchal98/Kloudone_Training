@@ -12,19 +12,8 @@
     <button onclick="hide()">toggle</button>
     <script>
       function hide() {
-        var x = document.getElementById("nav");
-        var y = document.getElementById("full-nav");
-        var z= document.getElementById("shrink-nav");
-        if (x.style.width === "100" && z.style.display === "none" || z.style.display === "block") {
-      x.style.width = "200";
-      y.style.display = "block";
-      z.style.display = "none";
-    } else {
-      x.style.width = "100";
-      z.style.display = "block";
-      y.style.display = "none";
+        document.getElementById("full-nav").className = "shrink-nav";
     }
-  }
   </script>
      <div id="full-nav"> 
     <button onclick="window.location.href='/index.html'"><i class="fas fa-chart-pie"></i> <P>Dashboard</P></button>
@@ -32,12 +21,6 @@
     <button onclick="window.location.href='/form.html'"><i class="far fa-edit"></i><p>Form</p></button>
     <button onclick="window.location.href='/map.html'"><i class="fas fa-map-marked"></i><p>Map</p></button>
   </div>
-  <div id="shrink-nav">
-    <button  onclick="window.location.href='/dashboard.html'"><i class="fas fa-chart-pie"></i></button>
-      <button  onclick="window.location.href='/user.html'"><i class="far fa-user-circle"></i></button>
-      <button  onclick="window.location.href='/form.html'"><i class="far fa-edit"></i></button>
-      <button  onclick="window.location.href='/map.html'"><i class="fas fa-map-marked"></i></button>
-  </div>  
   </nav>
     <header><h2>User Profile</h2></header>
 </body>
