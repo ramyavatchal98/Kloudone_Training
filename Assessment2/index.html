@@ -4,9 +4,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="/styles.css">
   <script src="/main.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.min.js">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
       google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
@@ -43,9 +44,9 @@
       data.addColumn('number', 'Transformers: Age of Extinction');
 
       data.addRows([
-        [1,  30, 120.8, 170.8],
-        [2,  10.9, 130.5, 130.4],
-        [3,  25.4,   110, 125.7],
+        [1,  130, 120.8, 140.8],
+        [2,  140.9, 130.5, 150.4],
+        [3,  150.4,   135, 145.7],
       ]);
 
       var options = {
@@ -56,7 +57,7 @@
         height: 500,
         axes: {
           x: {
-            0: {side: 'bottom'}
+            0: {side: 'top'}
           }
         }
       };
@@ -66,18 +67,40 @@
       chart.draw(data, google.charts.Line.convertOptions(options));
     }
     </script>
+
   <title>Document</title>
 </head>
 <body>
   <nav id="nav">
-  <button type ="button" id="toggle">toggle</button><br>
-  <script text="text/javascript">
-  document.getElementsById("toggle").addEventListener(onclick, function() {document.getElementById("menu-name").style.display="none";})
-  </script>
-  <button onclick="window.location.href='/dashboard.html'"><i class="fas fa-chart-pie"></i> <P id="menu-name">Dashboard</P></button>
-  <button onclick="window.location.href='/user.html'"><i class="far fa-user-circle"></i><P id="menu-name">User Profile</P></button>
-  <button onclick="window.location.href='/form.html'"><i class="far fa-edit"></i><p id="menu-name">Form</p></button>
-  <button onclick="window.location.href='/map.html'"><i class="fas fa-map-marked"></i><p id="menu-name">Map</p></button>
+  <button onclick="hide()">toggle</button>
+  <script>
+    function hide() {
+      var x = document.getElementById("nav");
+      var y = document.getElementById("full-nav");
+      var z= document.getElementById("shrink-nav");
+      if (x.style.width === "100" && z.style.display === "none" || z.style.display === "block") {
+    x.style.width = "200";
+    y.style.display = "block";
+    z.style.display = "none";
+  } else {
+    x.style.width = "100";
+    z.style.display = "block";
+    y.style.display = "none";
+  }
+}
+</script>
+   <div id="full-nav"> 
+  <button  onclick="window.location.href='/index.html'"><i class="fas fa-chart-pie"></i> <p>Dashboard</P></button>
+  <button  onclick="window.location.href='/user.html'"><i class="far fa-user-circle"></i><P id="menu">User Profile</P></button>
+  <button  onclick="window.location.href='/form.html'"><i class="far fa-edit"></i><p id="menu">Form</p></button>
+  <button  onclick="window.location.href='/map.html'"><i class="fas fa-map-marked"></i><p id="menu">Map</p></button>
+  </div>
+  <div id="shrink-nav">
+    <button  onclick="window.location.href='/dashboard.html'"><i class="fas fa-chart-pie"></i></button>
+      <button  onclick="window.location.href='/user.html'"><i class="far fa-user-circle"></i></button>
+      <button  onclick="window.location.href='/form.html'"><i class="far fa-edit"></i></button>
+      <button  onclick="window.location.href='/map.html'"><i class="fas fa-map-marked"></i></button>
+  </div>
   </nav>
   <header><h2>User Profile</h2></header>
   <div class="graph-container">
@@ -86,15 +109,16 @@
       <h2>Email Statistics</h2>
       <p>Last Campign Performance</p>
     </div>
+   
   <div id="piechart" style="text-align: center;width: 500px; height: 500px;display:flex;flex-direction: column;
-  margin: 0px;"></div>
+  margin: 0px;"></div> 
   </div>
   <div class="linechart-div">
     <div class="title">
       <h2>User Behaviour</h2>
       <p>24 hour Performance</p>
     </div>
-  <div id="line_top_x" style="width: 900px; position: relative;box-sizing: border-box;"></div>
+ <div id="line_top_x" style="width: 900px; position: relative;box-sizing: border-box;"></div> 
   </div>
   </div>
 </body>
