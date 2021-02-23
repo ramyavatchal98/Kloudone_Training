@@ -64,33 +64,30 @@ nav button:hover {
   .email-stats-div {
     display: flex;
     flex-direction: column;
-    border: 5px solid var(--border-colr);
-    border-radius: 25px;
+    border: 1px solid var(--border-colr);
     float: left;
     width: 600px;
     box-sizing: border-box;
-    margin:50px 30px 0px 30px;
+    margin:50px 20px 0px 5px;
     position: relative;
   }
   .email-stats-div .title {
-    border-bottom: 5px solid var(--border-colr);
+    border-bottom: 1px solid var(--border-colr);
     background-color:var(--title-bg) ;
-    font-family: inherit;
-    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
   }
-  .email-stats-div #piechart {
-    flex: 4;
-  }
+.email-stats-div .title h2,p {
+  margin: 10px 0px 10px 20px;
+}
   .linechart-div {
-    border: 5px solid var(--border-colr);
-    border-radius: 25px;
-    margin:50px 30px 0px 30px;
+    border: 1px solid var(--border-colr);
+    margin:50px 10px 0px 10px;
     background-color: var(--title-bg);
   }
   .linechart-div .title {
     border-bottom: 5px solid var(--border-colr);
   }
-
+  
 
 
   .map-container {
