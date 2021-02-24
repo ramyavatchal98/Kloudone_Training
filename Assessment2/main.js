@@ -1,20 +1,56 @@
-var result= document.getElementById("submit");
-result.addEventListener("onclick",Results);
 
-var row = 1;
 
-function Results() {
-  var firstName = document.getElementById("Fname").value;
-  var LastName= document.getElementById("Lname").value;
+function drawChartPie() {
+
+  var data = google.visualization.arrayToDataTable([
+    ['Task', 'Hours per Day'],
+    ['Open',     40],
+    ['Bounce',      40],
+    ['Unsubscribe',  20],
+
+  ]);
+
+  var options = {
+    title: ''
+  };
+
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+  chart.draw(data, options);
+  
 }
 
-var display = document.getElementById("display");
-var newRow = display.insertRow(row);
+function drawChart() {
 
-var cell1 = newRow.insertCell(0);
-var cell2 = newRow.insertCell(1);
+  var data = new google.visualization.DataTable();
+  data.addColumn('number', );
+  data.addColumn('number', 'Open');
+  data.addColumn('number', 'CLICK Second time ');
+  data.addColumn('number', 'Transformers: Age of Extinction');
 
-cell1.innerHTML= firstname;
-cell2.innerHTML = Lastname;
+  data.addRows([
+    [1,  130, 120.8, 140.8],
+    [2,  140.9, 130.5, 150.4],
+    [3,  150.4,   135, 145.7],
+  ]);
 
-row++;
+  var options = {
+    chart: {
+      title: ''
+    },
+    width: 625,
+    height: 300,
+    axes: {
+      x: {
+        0: {side: 'bottmom'}
+      }
+    }
+  };
+
+  var chart = new google.charts.Line(document.getElementById('line_top_x'));
+
+  chart.draw(data, google.charts.Line.convertOptions(options);
+}
+
+
+

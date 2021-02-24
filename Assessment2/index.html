@@ -8,74 +8,21 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-
-        var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Open',     40],
-          ['Bounce',      40],
-          ['Unsubscribe',  20],
-
-        ]);
-
-        var options = {
-          title: ''
-        };
-
-        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-
-        chart.draw(data, options);
-      }
-    </script>
-     <script type="text/javascript">
-      google.charts.load('current', {'packages':['line']});
-      google.charts.setOnLoadCallback(drawChart);
-
-    function drawChart() {
-
-      var data = new google.visualization.DataTable();
-      data.addColumn('number', );
-      data.addColumn('number', 'Open');
-      data.addColumn('number', 'CLICK Second time ');
-      data.addColumn('number', 'Transformers: Age of Extinction');
-
-      data.addRows([
-        [1,  130, 120.8, 140.8],
-        [2,  140.9, 130.5, 150.4],
-        [3,  150.4,   135, 145.7],
-      ]);
-
-      var options = {
-        chart: {
-          title: ''
-        },
-        width: 900,
-        height: 500,
-        axes: {
-          x: {
-            0: {side: 'top'}
-          }
-        }
-      };
-
-      var chart = new google.charts.Line(document.getElementById('line_top_x'));
-
-      chart.draw(data, google.charts.Line.convertOptions(options));
-    }
-    </script>
-
-  <title>Document</title>
+ <script>
+    google.charts.load('current', { 'packages': ['corechart'] });
+    google.charts.setOnLoadCallback(drawChartPie);
+    google.charts.load('current', {'packages':['line']});
+    google.charts.setOnLoadCallback(drawChart);
+</script>
+ <title>Dashboard</title>
 </head>
 <body>
   <nav id="nav">
   <button onclick="hide()">toggle</button>
   <script>
     function hide() {
-      document.getElementById("full-nav").className = "shrink-nav";
+    var element = document.getElementById("full-nav");
+    element.classList.toggle("shrink-nav");
     }
 </script>
    <div id="full-nav"> 
@@ -94,19 +41,27 @@
       <p>Last Campign Performance</p>
     </div>
    
-  <div id="piechart" style="text-align: center;width: 500px; height: 500px;display:flex;flex-direction: column;
-  margin: 0px;"></div> 
+  <div id="piechart" style="width:400px;text-align: center;display:flex;flex-direction: column;"></div> 
+  <div id="last-updated"> 
+      <script >
+          var x = document.lastModified;
+          document.getElementById("last-updated").innerHTML = x;
+        </script>
+      </div>
   </div>
   <div class="linechart-div">
     <div class="title">
       <h2>User Behaviour</h2>
       <p>24 hour Performance</p>
     </div>
- <div id="line_top_x" style="width: 900px; position: relative;box-sizing: border-box;"></div> 
+ <div id="line_top_x" style="width: 630px; height: 270px;position: relative;box-sizing: border-box;margin: 20px auto;"></div> 
   </div>
+  <div id="last-updated"> 
+   <script >
+      var x = document.lastModified;
+      document.getElementById("last-updated").innerHTML = x;
+    </script> 
   </div>
-  <div class="pi2">
- 
   </div>
 </body>
 </html>
