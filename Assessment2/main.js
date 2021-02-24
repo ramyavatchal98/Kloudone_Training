@@ -1,4 +1,4 @@
-
+const { dodgerblue } = require("color-name");
 
 function drawChartPie() {
 
@@ -49,8 +49,21 @@ function drawChart() {
 
   var chart = new google.charts.Line(document.getElementById('line_top_x'));
 
-  chart.draw(data, google.charts.Line.convertOptions(options);
+  chart.draw(data, google.charts.Line.convertOptions(options));
 }
 
 
 
+var submit = document.getElementById("submit");
+submit.addEventListener("click",displayDetails);
+var row=1;
+  function displayDetails() {
+    var Firstname = document.getElementById("Fname").value;
+    var LAstname = document.getElementById("Lname").value;
+    var Email = document.getElementById("Email").value;
+    var Message = document.getElementById("Mgs").value;
+
+    if(!Firstname || ! LAstname || ! Email ||!Message) {
+            alert("OOPS !")
+    }
+  }
