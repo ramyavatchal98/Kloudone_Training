@@ -14,9 +14,9 @@ function drawChartPie() {
     title: ''
   };
 
-  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  var piechart = new google.visualization.PieChart(document.getElementById('piechart'));
 
-  chart.draw(data, options);
+ piechart.draw(data, options);
   
 }
 
@@ -31,7 +31,7 @@ function drawChart() {
   data.addRows([
     [1,  130, 120.8, 140.8],
     [2,  140.9, 130.5, 150.4],
-    [3,  150.4,   135, 145.7],
+    [3,  150.4,   135, 145.7]
   ]);
 
   var options = {
@@ -39,7 +39,7 @@ function drawChart() {
       title: ''
     },
     width: 625,
-    height: 300,
+    height: 250,
     axes: {
       x: {
         0: {side: 'bottmom'}
@@ -67,3 +67,5 @@ var row=1;
             alert("OOPS !")
     }
   }
+
+  

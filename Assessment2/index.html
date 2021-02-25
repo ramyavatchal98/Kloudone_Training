@@ -18,13 +18,13 @@
 </head>
 <body>
   <nav id="nav">
-  <button onclick="hide()">toggle</button>
+  <button onclick="hide()">Toggle</button>
   <script>
-    function hide() {
-    var element = document.getElementById("full-nav");
-    element.classList.toggle("shrink-nav");
-    }
-</script>
+     function hide() {
+             var element = document.getElementById("full-nav");
+             element.classList.toggle("shrink-nav");
+     }
+    </script>
    <div id="full-nav"> 
   <button  onclick="window.location.href='/index.html'"><i class="fas fa-chart-pie"></i> <p>Dashboard</p></button>
   <button  onclick="window.location.href='/user.html'"><i class="far fa-user-circle"></i><P>User Profile</p></button>
@@ -41,7 +41,7 @@
       <p>Last Campign Performance</p>
     </div>
    
-  <div id="piechart" style="width:400px;text-align: center;display:flex;flex-direction: column;"></div> 
+  <div id="piechart"></div> 
   <div id="last-updated"> 
       <script >
           var x = document.lastModified;
