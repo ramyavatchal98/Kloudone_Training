@@ -17,7 +17,9 @@ header {
   color:#2d2e33;
   margin-bottom: 40px;
 }
-
+nav :first-child {
+  color: white;
+}
 nav {
   background-color: #3a3e45;
   display: flex;
