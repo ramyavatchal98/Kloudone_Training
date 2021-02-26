@@ -1,4 +1,3 @@
-const { dodgerblue } = require("color-name");
 
 function drawChartPie() {
 
@@ -51,6 +50,9 @@ function drawChart() {
 
   chart.draw(data, google.charts.Line.convertOptions(options));
 }
+
+
+
 
 
 
