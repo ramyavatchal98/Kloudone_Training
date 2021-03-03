@@ -8,6 +8,18 @@
   <title>Document</title>
 </head>
 <body>
+  <label for="font-size"> Select Font-size</label>
+  <select  class="input" id="font-size"  onchange="changeFontStyle (this);">
+    <option value="medium">Medium</option>
+    <option value="small">Small</option>
+    <option value="large">Large</option>
+  </select>
+  <label for="Api">select API Type</label>
+    <Select class="displayapi" id="Api" onchange="changeApi (this);">
+      <option value="small">Small file</option>
+      <option value="medium">Medium File</option>
+      <option value="large">Large file</option>
+    </Select>
   <table class="table-display">
     <tbody id="data">
       <thead>
