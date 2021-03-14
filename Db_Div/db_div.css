@@ -1,3 +1,9 @@
-#myData {
-  width:100%;
+#myData div{
+  font-size: 30px;
+  text-align: center;
 }
+  #myData div p {
+   font-size: 20px;
+ }
+
+

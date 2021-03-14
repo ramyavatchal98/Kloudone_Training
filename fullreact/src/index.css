@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f1f5f8;
+  color: #222;
+}
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 25px;
+}
+.booklist {
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  gap: 50px;
+}
+
+.book {
+  background-color: #fff;
+  border-radius: 1em;
+  padding: 20px;
+}
+
+.book h2 {
+  font-size: 32px;
+}
+.book h4 {
+  font-size: 26px;
+}
