@@ -111,6 +111,17 @@ ul button {
   width: 18%;
   font-size: 14px;
 }
+.triangle-up h4 {
+  position: absolute;
+  margin-top: 50;
+  margin-left: -20;
+}
+.triangle-down h4 {
+  position: absolute;
+  margin-top: -230;
+  margin-left: -30;
+}
+
 .triangle-down p {
   margin-top: -200px;
   margin-left: -120px;
