@@ -23,7 +23,16 @@ ul a,
 button {
   text-decoration: none;
   margin-right: 20px;
+  color: white;
+}
+ul button {
   color: black;
+  border-radius: 25px;
+}
+
+.home-icon {
+  display: inline-block;
+  margin: 10px 0px 10px 60px;
 }
 .wrapper-text {
   width: 30%;
