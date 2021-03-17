@@ -4,8 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // pages
 import Home from "./home";
 import FormData from "./foms/form";
-
-// navbar
+import useContext, { Shoppingcart } from "./useContext/useContext";
 import Main from "./fetchApi/Api";
 import ShowHide from "./showORHide/showorhide";
 import Navbar from "./navbar";
@@ -23,8 +22,11 @@ const ReactRouterSetup = () => {
         <Route exact path="/Apifetch">
           <Main />
         </Route>
-        <Route>
+        <Route path="/form">
           <FormData />
+        </Route>
+        <Route path="/useContext">
+          <Shoppingcart />
         </Route>
       </Switch>
     </Router>

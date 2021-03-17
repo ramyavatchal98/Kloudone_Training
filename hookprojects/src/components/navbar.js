@@ -16,6 +16,9 @@ const Navbar = () => {
         <li>
           <Link to="/form">Form</Link>
         </li>
+        <li>
+          <Link to="/usecontext">Shopping Cart</Link>
+        </li>
       </ul>
     </nav>
   );
