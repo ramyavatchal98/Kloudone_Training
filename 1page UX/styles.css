@@ -6,8 +6,7 @@ body {
   font-family: "Noto Sans TC", sans-serif;
 }
 .hero-bg {
-  background-color: #2a2a72;
-
+  min-height: 200px;
   color: white;
   background-image: linear-gradient(180deg, #2a2a72 0%, #009ffd 74%);
 }
@@ -16,7 +15,8 @@ ul {
   display: flex;
   list-style: none;
   float: right;
-  margin-right: 50px;
+  margin-right: 80px;
+  padding-top: 25px;
 }
 
 ul a,
@@ -24,6 +24,7 @@ button {
   text-decoration: none;
   margin-right: 20px;
   color: white;
+  font-size: 21px;
 }
 ul button {
   color: black;
@@ -60,6 +61,11 @@ ul button {
   position: relative;
   left: 80;
   bottom: 40;
+}
+.Wrapper-container img:hover {
+  transition: all 2s;
+  transform: rotatez(30deg);
+  cursor: pointer;
 }
 .wrapper-text h2 {
   font-size: 42px;
@@ -111,6 +117,7 @@ ul button {
   width: 17%;
   font-size: 12px;
 }
+
 .triangle-up h4 {
   position: absolute;
   margin-top: 50;
@@ -131,45 +138,45 @@ ul button {
   width: 17%;
 }
 
-/*slider css */
+/*Testimonals css */
+.Testimonals-container {
+  background-color: azure;
+  height: 400px;
+  margin-bottom: 200px;
+  box-sizing: border-box;
+}
 section {
   width: 85vw;
-  max-width: var(--fixed-width);
   margin: 0 auto;
-  margin-top: 5rem;
   text-align: center;
   padding: 1rem 0;
-  /* set relative for buttons */
   position: relative;
 }
-.reviews {
-  margin-bottom: 4rem;
-}
+
 .reviews h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
 }
-.reviews span {
-  font-size: 0.85em;
-  color: var(--clr-primary-5);
-  margin-right: 1rem;
-}
+
 .img {
-  width: 150px;
-  height: 150px;
+  width: 90px;
+  height: 90px;
   object-fit: cover;
-  border: 1px solid var(--clr-grey-7);
-  background: var(--clr-white);
+
   padding: 0.25rem;
   border-radius: 50%;
-  box-shadow: var(--dark-shadow);
+}
+img:hover {
+  transition: all 1s;
+  transform: scale(1.2);
+  cursor: pointer;
 }
 h4 {
   text-transform: uppercase;
   font-weight: 500;
-  color: var(--clr-primary-5);
-  letter-spacing: var(--spacing);
+
   margin: 0.5rem 0;
 }
 .title {
@@ -178,7 +185,6 @@ h4 {
   text-transform: capitalize;
 }
 .text {
-  color: var(--clr-grey-5);
   line-height: 1.8;
   max-width: 35em;
   margin: 0 auto;
@@ -256,7 +262,10 @@ h4 {
   height: 0;
   transition: all 0.5s;
 }
-
+.AboutUs-flexitem:hover {
+  transition: all 1s;
+  transform: scale(1.2);
+}
 .AboutUs-flexitem .readmore-btn {
   color: black;
   font-size: 30px;
