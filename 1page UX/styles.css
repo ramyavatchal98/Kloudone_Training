@@ -247,14 +247,14 @@ h4 {
   padding: 0px 0px 0px 120px;
 }
 .AboutUs-container .AboutUs-flexitem {
-  width: calc(100% / 3 - 100px);
+  width: calc(100% / 3 - 140px);
   margin: 50px 20px;
   text-align: left;
   padding: 0px 25px;
   box-sizing: border-box;
   background-color: #2a2a72;
   height: 400px;
-  font-size: 16px;
+  font-size: 12px;
 }
 .readmore-text {
   display: block;
@@ -266,13 +266,19 @@ h4 {
   transition: all 1s;
   transform: scale(1.2);
 }
-.AboutUs-flexitem .readmore-btn {
-  color: black;
-  font-size: 30px;
-}
+
 .AboutUs-flexitem .readmore-text--open {
   display: block;
   opacity: 1;
+}
+
+.readmore-btn {
+  font-size: 21px;
+  border-radius: 20px;
+  color: black;
+  background-color: cornsilk;
+  margin-top: 50px;
+  float: right;
 }
 /* ContactUs -container*/
 .ContactUS-container {
