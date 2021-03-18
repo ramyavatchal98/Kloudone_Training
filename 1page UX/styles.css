@@ -29,6 +29,8 @@ button {
 ul button {
   color: black;
   border-radius: 25px;
+  border: none;
+  padding: 3px 20px;
 }
 
 .home-icon {
@@ -270,6 +272,11 @@ h4 {
 .AboutUs-flexitem .readmore-text--open {
   display: block;
   opacity: 1;
+}
+h2 {
+  color: black;
+  text-align: center;
+  font-size: 32px;
 }
 
 .readmore-btn {
