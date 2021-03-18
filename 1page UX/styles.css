@@ -175,7 +175,7 @@ img:hover {
   transform: scale(1.2);
   cursor: pointer;
 }
-h4 {
+h2 {
   text-transform: uppercase;
   font-weight: 500;
 
@@ -319,6 +319,9 @@ footer p {
   gap: 1rem;
 
   display: flex;
+}
+.AboutUs-container h2 {
+  text-align: center;
 }
 
 .container {
