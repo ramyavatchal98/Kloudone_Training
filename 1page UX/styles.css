@@ -251,7 +251,7 @@ h2 {
 }
 .ContactUS-container h2 {
   text-align: center;
-  font-size: 42px;
+  font-size: 36px;
 }
 .ContactUS-container .Contact-flex {
   display: flex;
@@ -311,18 +311,17 @@ footer p {
   padding: 0px 40px;
   margin: 0px 0px 100px 30px;
 }
-
+.AboutUs-container h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+}
 .read-more-container {
   flex-direction: row;
   color: #111;
   gap: 1rem;
 
   display: flex;
-}
-.AboutUs-container h2 {
-  text-align: center;
-  margin-bottom: 60px;
-  font-weight: 600;
 }
 
 .container {
